@@ -1,0 +1,9 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(110, 15, 219),
+    rgb(190, 0, 79)
+  );
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}

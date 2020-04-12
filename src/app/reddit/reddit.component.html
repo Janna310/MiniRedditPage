@@ -1,0 +1,29 @@
+<div class="head">
+  <div class="subhead">
+    <p class="pageTitle">Mini Reddit Page</p>
+    <p class="subTitle">A subreddit for cute and cuddly pictures</p>
+  </div>
+</div>
+<section class="parentSection">
+  <div
+    class="infoSection"
+    *ngFor="let post of responseData.data.children; index as i"
+  >
+    <div class="styleBox">
+      <img
+        class="imgBox"
+        src="{{ post.data.thumbnail }}"
+        alt="image not loading"
+      />
+      <a href="https://www.reddit.com{{ post.data.permalink }}" alt="">
+        Click to View More</a
+      >
+    </div>
+    <div class="titleBox">
+      <div class="titleInner">
+        {{ post.data.title }}
+      </div>
+      <div class="author">Author: {{ post.data.author }}</div>
+    </div>
+  </div>
+</section>
